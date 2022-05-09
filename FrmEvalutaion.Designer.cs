@@ -1,4 +1,6 @@
-﻿namespace Evaluation_Manager
+﻿using System;
+
+namespace Evaluation_Manager
 {
 	partial class FrmEvalutaion
 	{
@@ -82,6 +84,7 @@
 			this.cboActivities.Name = "cboActivities";
 			this.cboActivities.Size = new System.Drawing.Size(169, 21);
 			this.cboActivities.TabIndex = 3;
+			this.cboActivities.SelectedIndexChanged += new System.EventHandler(this.cboActivities_SelectedIndexChanged);
 			// 
 			// txtMin
 			// 
@@ -174,6 +177,7 @@
 			this.btnCancel.TabIndex = 14;
 			this.btnCancel.Text = "odustani";
 			this.btnCancel.UseVisualStyleBackColor = true;
+			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
 			// 
 			// FrmEvalutaion
 			// 
@@ -197,10 +201,21 @@
 			this.Controls.Add(this.label1);
 			this.Name = "FrmEvalutaion";
 			this.Text = "FrmEvalutaion";
+			this.Load += new System.EventHandler(this.FrmEvalutaion_Load);
 			((System.ComponentModel.ISupportInitialize)(this.numPoints)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
+		}
+
+		private void label6_Click(object sender, EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
+		private void label3_Click(object sender, EventArgs e)
+		{
+			throw new NotImplementedException();
 		}
 
 		#endregion

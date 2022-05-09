@@ -50,7 +50,7 @@ namespace Evaluation_Manager.Repositories
 			string description = reader["Description"].ToString();
 			int maxPoints = int.Parse(reader["MaxPoints"].ToString());
 			int minPointsForGrade = int.Parse(reader["MinPointsForGrade"].ToString());
-			int minPoints = int.Parse(reader["MinPoints"].ToString());
+			int minPoints = int.Parse(reader["MinPointsForSignature"].ToString());
 			Activity activity = new Activity
 			{
 				Id = id,
